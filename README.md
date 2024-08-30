@@ -1,7 +1,7 @@
 Official repository of the GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation.
 
 
-## Quick Start
+## Installation
 
 1. Create a virtual environment and activate it (e.g conda environment)
 ```
