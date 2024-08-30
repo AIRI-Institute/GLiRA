@@ -92,10 +92,9 @@ def cache_eval_data(args, cache_dir) -> None:
         images = []
         for batch_idx, (inputs, targets) in tqdm(enumerate(testloader), 
                                                 total=len(testloader), 
-                                                desc=f'Inference [{n_aug}/{args.num_aug}]',
+                                                desc=f'Caching [{n_aug}/{args.num_aug - 1}]',
                                                 leave=True):
             inputs = inputs.permute(0, 2, 3, 1).numpy()
-            raise ValueError('')
             images.append(inputs)
         images = np.concatenate(images)
         np.save(os.path.join(cache_dir, f'data_batch_{n_aug}.npy'), images)
@@ -178,7 +177,7 @@ def evaluate(args):
         
         for batch_idx, (inputs, targets) in tqdm(enumerate(testloader), 
                                                  total=len(testloader), 
-                                                 desc=f'Inference [{n_aug}/{args.num_aug}]',
+                                                 desc=f'Inference [{n_aug}/{args.num_aug - 1}]',
                                                  leave=True):
             inputs = inputs.to(device)
 
@@ -269,7 +268,8 @@ def cache_evaluate(args):
     cache_dir = f'./eval_data/{args.dataset}'
     if os.path.exists(cache_dir):
         print(f'Using cached dataset at: {cache_dir}')
-    cache_eval_data(args, cache_dir)
+    else:
+        cache_eval_data(args, cache_dir)
 
     task_labels = np.load(os.path.join(cache_dir, 'task_labels.npy'))
     labels = np.load(os.path.join(cache_dir, 'labels.npy'))
@@ -286,7 +286,7 @@ def cache_evaluate(args):
         
         for batch_idx, (inputs, targets) in tqdm(enumerate(testloader), 
                                                  total=len(testloader), 
-                                                 desc=f'Inference [{n_aug}/{args.num_aug}]',
+                                                 desc=f'Inference [{n_aug}/{args.num_aug - 1}]',
                                                  leave=True):
             inputs = inputs.to(device)
             

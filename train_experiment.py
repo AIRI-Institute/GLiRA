@@ -7,9 +7,7 @@ import subprocess
 def check_existance(args, shadow_idx):
     d = f'./checkpoints/{args.dataset}/shadow/{args.net}'
     if args.target_net is not None:
-        if args.full_black_box:
-            d = d + f'_{(1.0 - args.lambd):.1f}dis_bb_' + args.target_net 
-        elif args.mse_distillation:
+        if args.mse_distillation:
             d = d + f'_MSEdis_' + args.target_net
             if args.lambd < 1.0:
                 d = d + f'_{(1.0 - args.lambd):.1f}MSEdis_' + args.target_net
