@@ -53,7 +53,7 @@ Here, we provide an example how to evaluate the success rate of the attacks obta
 
 All the results are stored at `./results/cifar10/results.pickle` file, which is a `pd.DataFrame` instance. Column `method` contains attack method.
 
-**NOTE:** By default we first cache the evaluation data (`--cache_data`) to exclude randomness introduced by augmentations between different runs. For the considered datasets, the required memory is small, but if you still don't want to store them - just disable this flag.
+**NOTE:** By default we first cache the evaluation data (`--cache_data`) to exclude randomness introduced by augmentations between different runs. For the considered datasets, the required memory is small, but if you still don't want to store them just disable this flag.
 
 If `--cache_data` is specified, cached evaluation data is stored at `./eval_data`.
 
@@ -78,4 +78,4 @@ data = pandas.read_pickle('./results/results.pickle')
 data[['method', 'shadow_net', 'target_net', 'dataset', 'auc', 'acc', 'tpr@fpr']]
 ```
 
-The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01%$, $0.1%$, $1%$, $10%$
+The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01\%$, $0.1\%$, $1\%$, $10\%$
