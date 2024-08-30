@@ -78,4 +78,4 @@ data = pandas.read_pickle('./results/results.pickle')
 data[['method', 'shadow_net', 'target_net', 'dataset', 'auc', 'acc', 'tpr@fpr']]
 ```
 
-The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01\%$, $0.1\%$, $1\%$, $10\%$
+The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01$%, $0.1$%, $1$%, $10$%
