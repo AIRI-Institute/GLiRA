@@ -1,5 +1,8 @@
-Official repository of the GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation.
+# GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation.
 
+This code is the official implementation of [GLiRA](https://arxiv.org/abs/2405.07562).
+
+If you have any questions, feel free to email Andrey Galichin (Andrey.Galichin@skoltech.ru).
 
 ## Installation
 
@@ -79,6 +82,12 @@ data[['method', 'shadow_net', 'target_net', 'dataset', 'auc', 'acc', 'tpr@fpr']]
 ```
 
 The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01$%, $0.1$%, $1$%, $10$%
+
+## Acknowledgements
+
+This code is partially based on the following repositories:
+- https://github.com/privacytrustlab/ml_privacy_meter
+- https://github.com/YuxinWenRick/canary-in-a-coalmine
 
 ## Citation
 
