@@ -79,3 +79,19 @@ data[['method', 'shadow_net', 'target_net', 'dataset', 'auc', 'acc', 'tpr@fpr']]
 ```
 
 The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0.01$%, $0.1$%, $1$%, $10$%
+
+## Citation
+
+If you find this repository and our work useful, please consider giving a star and please cite as:
+
+```bash
+@misc{galichin2024glirablackboxmembershipinference,
+      title={GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation}, 
+      author={Andrey V. Galichin and Mikhail Pautov and Alexey Zhavoronkin and Oleg Y. Rogov and Ivan Oseledets},
+      year={2024},
+      eprint={2405.07562},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2405.07562}, 
+}
+```
