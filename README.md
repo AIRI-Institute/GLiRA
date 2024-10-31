@@ -85,7 +85,7 @@ The True-Positive-Rates are reported for the next fixed False-Positive-Rates: $0
 
 ## Acknowledgements
 
-This code is partially based on the following repositories:
+This code is based on the following repositories:
 - https://github.com/privacytrustlab/ml_privacy_meter
 - https://github.com/YuxinWenRick/canary-in-a-coalmine
 
