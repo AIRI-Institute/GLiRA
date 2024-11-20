@@ -1,0 +1,3 @@
+[submodule "opacus"]
+	path = opacus
+	url = https://github.com/pytorch/opacus.git
