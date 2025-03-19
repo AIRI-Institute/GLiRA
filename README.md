@@ -91,16 +91,18 @@ This code is based on the following repositories:
 
 ## Citation
 
+We are pleased to announce that our paper has been accepted for publication in the "IEEE Transactions on Information Forensics and Security".
+
 If you find this repository and our work useful, please consider giving a star and please cite as:
 
 ```bash
-@misc{galichin2024glirablackboxmembershipinference,
-      title={GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation}, 
-      author={Andrey V. Galichin and Mikhail Pautov and Alexey Zhavoronkin and Oleg Y. Rogov and Ivan Oseledets},
-      year={2024},
-      eprint={2405.07562},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2405.07562}, 
+@article{galichin2025glira,
+  title={GLiRA: Black-Box Membership Inference Attack via Knowledge Distillation},
+  author={Galichin, Andrey V and Pautov, Mikhail and Zhavoronkin, Alexey and Rogov, Oleg Y and Oseledets, Ivan},
+  journal={IEEE Transactions on Information Forensics and Security},
+  number={99},
+  pages={1--1},
+  year={2025},
+  publisher={IEEE}
 }
 ```
