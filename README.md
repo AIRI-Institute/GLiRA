@@ -91,7 +91,7 @@ This code is based on the following repositories:
 
 ## Citation
 
-We are pleased to announce that our paper has been accepted for publication in the "IEEE Transactions on Information Forensics and Security".
+We are pleased to announce that our paper has been accepted for publication in the IEEE Transactions on Information Forensics and Security.
 
 If you find this repository and our work useful, please consider giving a star and please cite as:
 
